@@ -13,11 +13,11 @@ useEffect(() => {
         const response = await fetch('https://api.github.com/users/MilaPinheiro/repos')
         const data = await response.json()
 
-        if (data.length >= 12) {
+        if (data.length >= 17) {
             const topics = data[0].topics;
             console.log(topics);
 
-            const repos = data.slice(0, 6).concat(data[12])
+            const repos = data.slice(0, 6).concat(data[13])
             setRepositories(repos);
         } else {
             console.error("O array 'data' não tem pelo menos 12 elementos.")
