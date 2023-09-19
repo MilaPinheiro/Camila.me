@@ -1,0 +1,240 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+.header {
+    width: 100%;
+    height: 64px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+   
+}
+
+.header span {
+    color: var(--terceary);
+    font-size: 26px;
+    width: 20%;
+    font-family: 'Dancing Script', cursive;
+}
+
+header section {
+    width: 80%;
+    max-width: 1200px;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header_nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+}
+
+.header_nav ul li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0 16px 0 16px; 
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.header_nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
+    border: none;
+  }
+
+.header_nav ul li a h1 {
+    color: var(--soft-gray);
+    font-size: 16px;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+  }
+
+.header_nav  ul li a:hover {
+    border-bottom: 1px solid var(--terceary);
+}
+
+.header_nav ul li a:hover h1 {
+    color: #F3F3F3;
+}
+  
+header section nav, header section ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+header section div.contact_nav_bar {
+    height: 40px;
+    border: 1px solid var(--soft-gray);
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+}
+
+header section .contact_button {
+    text-decoration: none;
+
+}
+
+header section a .contact_nav_bar{
+    padding: 10px;
+}
+
+.icon {
+    color: var(--soft-gray);
+    width: 20px;
+    height: 20px;
+}
+
+.contact_nav_bar a{
+    color: var(--soft-gray);
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+header section a .contact_nav_bar:hover {
+    border: 1px solid var(--terceary);
+    box-shadow: 0px 0px 3px var(--terceary);
+}
+
+header section a .contact_nav_bar:active {
+    border: 1px solid var(--terceary);
+    background-color: var(--terceary);
+}
+
+.mobile_menu_toggle{
+    display: none;
+    cursor: pointer;
+    background-color: white; 
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.close{
+    display: none;
+}
+
+.sandwich{
+    display: none;
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    
+
+    .header {
+        background-color: var(--primary);
+
+    }
+
+    .header section {
+        width: 90%;
+    
+    }
+
+    .header span {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .contact_button {
+        display: none;
+    }
+  
+    .button_nav {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background-color: var(--secundary);
+        border: none;
+        
+    }
+
+
+    .header_nav {
+        display: none;
+        border: 1px solid red;
+    }
+    
+      .menuOpen  {
+        display: block;
+        width: 50%;
+        height: 25%;
+        background-color: #9061ff80; 
+        margin-top: 220px;
+        margin-left: 152px;
+        border-radius: 5px;
+        position: fixed;
+        z-index: 2;
+        border: 1px solid var(--terceary);
+        /* border-radius: 6px 36px; */
+       
+      }
+
+      .sandwich {
+        display: block;
+        width: 40px;
+        height: 40px;
+        color: var(--terceary);
+      }
+
+      .close {
+        display: block;
+        width: 30px;
+        height: 30px;
+        color: var(--terceary);
+      }
+    
+  
+    .menuOpen ul {
+        padding: 15px;
+        list-style: none;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+
+    .menuOpen ul li a h1 {
+        color: rgb(37, 4, 68);
+        font-weight: 700;
+        font-size: 16px;
+        
+    }
+   
+}
+   
+ 
