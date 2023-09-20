@@ -17,7 +17,7 @@ useEffect(() => {
             const topics = data[0].topics;
             console.log(topics);
 
-            const repos = data.slice(0, 6).concat(data[13])
+            const repos = data.slice(0, 7).concat(data[13])
             setRepositories(repos);
         } else {
             console.error("O array 'data' não tem pelo menos 12 elementos.")

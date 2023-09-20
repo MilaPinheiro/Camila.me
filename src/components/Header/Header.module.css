@@ -86,7 +86,7 @@ header section nav, header section ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100%;
+   
 }
 
 header section div.contact_nav_bar {
@@ -112,6 +112,15 @@ header section a .contact_nav_bar{
     color: var(--soft-gray);
     width: 20px;
     height: 20px;
+}
+
+.contact_button  {
+    max-width: 30%;
+}
+
+.contact_button div a {
+    font-size: 16px;
+   
 }
 
 .contact_nav_bar a{
@@ -150,7 +159,7 @@ header section a .contact_nav_bar:active {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     
 
     .header {
@@ -171,6 +180,7 @@ header section a .contact_nav_bar:active {
     .contact_button {
         display: none;
     }
+
   
     .button_nav {
         width: 30px;

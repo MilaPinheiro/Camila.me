@@ -19,30 +19,35 @@ function Card({ name, htmlUrl, topics, homepage }) {
     
     return (
         <section className={styles.card}>
-            
-                    <img src={`https://raw.githubusercontent.com/MilaPinheiro/${name}/master/.gitHub/preview.png`} 
-                     width="100%" 
-                     height='200px' 
-                     alt="" 
-                     />
+        
                
-                    {/* <h3>{name}</h3> */}
+                    <h3>{name}</h3>
                     <div className={styles.card_icones} >
-                            <div className={styles.iconsBox}> 
-                                {topics.map((topic, index) => (
-                                    <span key={index}>
-                                        {topicIcon[topic]} 
-                                    </span>
-                                    ))}
-                            </div>
-                        <Link to={htmlUrlHomepage} 
-                            target={'_blank'}  
-                            className={styles.card_button}
-                        >
-                        <BsArrowRight/>
-                        </Link>
-                
-                    
+                        <div>
+                            <img src={`https://raw.githubusercontent.com/MilaPinheiro/${name}/master/.gitHub/preview.png`} 
+                            width="100%" 
+                            height='200px' 
+                            alt="" 
+                            />
+                        </div>
+                        <div className={styles.container_icons}>
+                                <div className={styles.iconsBox}> 
+                                    {topics.map((topic, index) => (
+                                        <span key={index}>
+                                            {topicIcon[topic]} 
+                                        </span>
+                                        ))}
+                                </div>
+                                <div  className={styles.card_button}>                  
+                                    <Link to={htmlUrlHomepage} 
+                                        target={'_blank'}  
+                                        className={styles.card_button}
+                                        >
+                                        <BsArrowRight/>
+                                    </Link>
+                                </div>  
+                         
+                        </div>
                     </div>
                 
             
