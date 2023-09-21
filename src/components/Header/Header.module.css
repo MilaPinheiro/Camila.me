@@ -163,12 +163,12 @@ header section a .contact_nav_bar:active {
 
     .header {
         background-color: var(--primary);
-
+     
     }
 
     .header section {
         width: 90%;
-    
+        
     }
 
     .header span {
@@ -182,30 +182,25 @@ header section a .contact_nav_bar:active {
 
   
     .button_nav {
-        width: 30px;
-        height: 30px;
         background-size: cover;
         background-color: var(--secundary);
         border: none;
-        
     }
 
 
     .header_nav {
         display: none;
-        border: 1px solid red;
-        margin-top: 220px; 
-        margin-left: 152px;
+      
     }
     
       .menuOpen  {
         display: block;
-        width: 50%;
-        height: 25%;
         background-color: #9061ff80; 
         border-radius: 5px;
         position: fixed;
         border: 1px solid var(--terceary);
+        margin-top: 62%;
+        margin-left: 48%;
         /* border-radius: 6px 36px; */
        
       }
