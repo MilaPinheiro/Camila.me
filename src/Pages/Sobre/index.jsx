@@ -18,7 +18,7 @@ function Sobre() {
                                      percebi uma nova perspectiva que integra minha sólida formação em química com as inovações tecnológicas. </p>
                                      Atualmente, estou imersa no estudo de Desenvolvimento Front-end, buscando ampliar meu conhecimento e habilidades no JavaScript, HTML e CSS, React e pretentendo me aprofundar no Node Js.
                                      </h1>
-                                    <a  href="./downloads/currículo.pdf" target="_blank" download>
+                                    <a  href="../../assets/curriculo.pdf" target="_blank" download>
                                     <div className={styles.download_cv}>
                                         <h1 >Download CV</h1>
                                     </div>
