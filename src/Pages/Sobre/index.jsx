@@ -1,5 +1,6 @@
 import styles from './Sobre.module.css'
 import profileImage from '../../assets/porfile.png';
+import MyPDF from "../../assets/curriculo.pdf"
 
 function Sobre() {
 
@@ -18,11 +19,11 @@ function Sobre() {
                                      percebi uma nova perspectiva que integra minha sólida formação em química com as inovações tecnológicas. </p>
                                      Atualmente, estou imersa no estudo de Desenvolvimento Front-end, buscando ampliar meu conhecimento e habilidades no JavaScript, HTML e CSS, React e pretentendo me aprofundar no Node Js.
                                      </h1>
-                                    <a  href="../../assets/curriculo.pdf" target="_blank" download>
+                                    <a  href={MyPDF}  target="_blank"  rel="noopener noreferrer" download>
                                     <div className={styles.download_cv}>
                                         <h1 >Download CV</h1>
                                     </div>
-                                </a>
+                                    </a>
                             </div>
             
                         </div>
