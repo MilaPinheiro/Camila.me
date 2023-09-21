@@ -1,4 +1,5 @@
 import styles from './Sobre.module.css'
+import profileImage from '../../assets/porfile.png';
 
 function Sobre() {
 
@@ -8,7 +9,7 @@ function Sobre() {
             <div className={styles.line_subtitle}></div>
                         <div className={styles.about_me}>
                             <div className={styles.porfile}>
-                                <img src="../Sobre/foto.jpg" alt="foto-camila" />
+                            <img src={profileImage} alt=''/>
                             </div>
                             <div className={styles.apresentation_cv}>
                                 <h1 className={styles.me}>
