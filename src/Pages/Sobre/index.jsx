@@ -8,7 +8,7 @@ function Sobre() {
             <div className={styles.line_subtitle}></div>
                         <div className={styles.about_me}>
                             <div className={styles.porfile}>
-                                <img src="../../assets/foto.jpg" alt="foto-camila" />
+                                <img src="../Sobre/foto.jpg" alt="foto-camila" />
                             </div>
                             <div className={styles.apresentation_cv}>
                                 <h1 className={styles.me}>
